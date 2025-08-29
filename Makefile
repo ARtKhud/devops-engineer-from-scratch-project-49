@@ -1,6 +1,9 @@
 install:
 	uv sync
 
+brain-even:
+	uv run brain-even
+
 brain-games:
 	uv run brain-games
 
@@ -15,3 +18,6 @@ package-reinstall:
 
 lint:
 	uv run ruff check brain_games
+
+lint-fix:
+	uv run ruff check brain_games --fix
