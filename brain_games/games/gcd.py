@@ -1,10 +1,10 @@
-from random import randint
+import random
 
 TEXT = "Find the greatest common divisor of given numbers."
 
 def print_question():
-    number_one = randint(1, 100)
-    number_two = randint(1, 100)
+    number_one = random.randint(1, 100)
+    number_two = random.randint(1, 100)
     print(f"Question: {number_one} {number_two}")
     return calc_nod(number_one, number_two)
 
