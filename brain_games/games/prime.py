@@ -23,6 +23,7 @@ def is_number_prime(num):
         i += 6
     return True
 
+
 def is_user_correct(is_prime, answer):
     if is_prime and answer == "yes":
         print("Correct!", end="\n")

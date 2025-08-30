@@ -1,4 +1,4 @@
-from secrets import randbelow 
+from secrets import randbelow
 
 TEXT = "What number is missing in the progression?"
 
