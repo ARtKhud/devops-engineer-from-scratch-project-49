@@ -18,6 +18,7 @@ This repository contains simple command-line games written in Python as part of 
 - **brain-games**: Greets the user and asks for their name.
 - **brain-even**: Asks the user whether a randomly generated number is even.
 - **brain-clac**: Asks the user to calculate the expression and write the right answer
+- **brain-gcd**: Asks the user to find GCD (greatest common divisor)
 
 More games may be added as the project evolves.
 
@@ -105,4 +106,45 @@ Question: 25 * 7
 Your answer: 145
 '145' is wrong answer ;(. Correct answer was '175'.
 Let's try again, Bob!
+```
+
+## Launch the GCD game:
+```bash
+brain-gcd
+```
+### Demonstration of different outcomes:
+
+### 1. Successful completion of the game:
+```
+Welcome to the Brain Games!
+May I have your name? Helen
+Hello, Helen!
+Find the greatest common divisor of given numbers.
+Question: 29 16
+Your answer: 1
+Correct!
+Question: 96 62
+Your answer: 2
+Correct!
+Question: 92 53
+Your answer: 1
+Correct!
+Congratulations Helen
+```
+### 2. Wrong answer:
+```
+Welcome to the Brain Games!
+May I have your name? Tirion
+Hello, Tirion!
+Find the greatest common divisor of given numbers.
+Question: 66 79
+Your answer: 1
+Correct!
+Question: 2 61
+Your answer: 1
+Correct!
+Question: 51 45
+Your answer: 1
+'1' is wrong answer ;(. Correct answer was '3'.
+Let's try again, Tirion
 ```
