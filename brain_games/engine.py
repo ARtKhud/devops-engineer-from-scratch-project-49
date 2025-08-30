@@ -17,9 +17,9 @@ def print_user_answer():
 
 def print_end_result(attempts):
     if attempts == 3:
-        print(f"Congratulations, {user_name}")
+        print(f"Congratulations, {user_name}!")
     else:
-        print(f"Let's try again, {user_name}")
+        print(f"Let's try again, {user_name}!")
 
 
 def start_game(condition_string, predicateFn, questionFn):
