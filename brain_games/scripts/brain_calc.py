@@ -1,6 +1,6 @@
 from random import randint
 
-from brain_games.scripts.game_engine import start_game
+from brain_games.game_engine import start_game
 
 OPERATORS = ['+', '-', '*']
 
