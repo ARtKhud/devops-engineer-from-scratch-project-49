@@ -1,10 +1,11 @@
-import random
+import secrets
 
 TEXT = "Find the greatest common divisor of given numbers."
 
+
 def print_question():
-    number_one = random.randint(1, 100)
-    number_two = random.randint(1, 100)
+    number_one = secrets.randbelow(100) + 1  
+    number_two = secrets.randbelow(100) + 1
     print(f"Question: {number_one} {number_two}")
     return calc_nod(number_one, number_two)
 
@@ -18,6 +19,7 @@ def calc_nod(num_one, num_two):
         b = temp % b
         temp = a
     return a
+
 
 def is_user_correct(num, answer):
     to_int = int(answer)
