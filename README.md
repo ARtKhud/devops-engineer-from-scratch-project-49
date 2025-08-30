@@ -2,9 +2,16 @@
 This repository contains simple command-line games written in Python as part of the "DevOps Engineer from Scratch" educational project. Each game greets the user and asks a question such as whether a number is even.
 ## Badges
 
-[![GitHub Actions Status](https://github.com/hexlet-boilerplates/python-package/workflows/Python%20CI/badge.svg)](https://github.com/hexlet-boilerplates/python-package/actions)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=hexlet-boilerplates_python-package&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=hexlet-boilerplates_python-package)
-
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ARtKhud_devops-engineer-from-scratch-project-49&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ARtKhud_devops-engineer-from-scratch-project-49)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=ARtKhud_devops-engineer-from-scratch-project-49&metric=bugs)](https://sonarcloud.io/summary/new_code?id=ARtKhud_devops-engineer-from-scratch-project-49)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=ARtKhud_devops-engineer-from-scratch-project-49&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=ARtKhud_devops-engineer-from-scratch-project-49)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=ARtKhud_devops-engineer-from-scratch-project-49&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=ARtKhud_devops-engineer-from-scratch-project-49)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=ARtKhud_devops-engineer-from-scratch-project-49&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=ARtKhud_devops-engineer-from-scratch-project-49)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=ARtKhud_devops-engineer-from-scratch-project-49&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=ARtKhud_devops-engineer-from-scratch-project-49)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=ARtKhud_devops-engineer-from-scratch-project-49&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=ARtKhud_devops-engineer-from-scratch-project-49)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=ARtKhud_devops-engineer-from-scratch-project-49&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=ARtKhud_devops-engineer-from-scratch-project-49)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ARtKhud_devops-engineer-from-scratch-project-49&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ARtKhud_devops-engineer-from-scratch-project-49)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=ARtKhud_devops-engineer-from-scratch-project-49&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=ARtKhud_devops-engineer-from-scratch-project-49)
 
 ## Games
 
