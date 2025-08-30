@@ -1,4 +1,4 @@
-from random import randint
+from secrets import randbelow 
 
 TEXT = "What number is missing in the progression?"
 
@@ -14,9 +14,9 @@ def print_question():
 
 def generate_progression():
     steps = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    step_index = randint(1, 10)
-    prog_len = randint(5, 10)
-    start = randint(1, 999)
+    step_index = randbelow(len(steps) - 1)
+    prog_len = randbelow(10) + 5
+    start = randbelow(999) + 1
     result = []
     for i in range(prog_len):
         currentElement = start + i * steps[step_index]
@@ -25,7 +25,7 @@ def generate_progression():
     
 
 def ommit_random_number(progression):
-    ommited_index = randint(0, len(progression) - 1)
+    ommited_index = randbelow(len(progression) - 1)
     result = []
     ommited_item = 0
     for i, item in enumerate(progression):
