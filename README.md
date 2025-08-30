@@ -19,6 +19,7 @@ This repository contains simple command-line games written in Python as part of 
 - **brain-even**: Asks the user whether a randomly generated number is even.
 - **brain-clac**: Asks the user to calculate the expression and write the right answer
 - **brain-gcd**: Asks the user to find GCD (greatest common divisor)
+- **brain-progression**: Asks the user to find ommited number in the sequence of numbers 
 
 More games may be added as the project evolves.
 
@@ -147,4 +148,42 @@ Question: 51 45
 Your answer: 1
 '1' is wrong answer ;(. Correct answer was '3'.
 Let's try again, Tirion
+```
+
+## Launch the progression games:
+```bash
+brain-progression
+```
+### Demonstration of different outcomes:
+
+### 1. Successful completion of the game:
+```
+Welcome to the Brain Games!
+May I have your name? Anna
+Hello, Anna!
+What number is missing in the progression?
+Question: 413 418 423 .. 433 438
+Your answer: 428
+Correct!
+Question: 76 81 86 91 96 101 106 111 ..
+Your answer: 116
+Correct!
+Question: 975 982 989 996 1003 1010 .. 1024 1031
+Your answer: 1017
+Correct!
+Congratulations Anna
+```
+### 2. Wrong answer:
+```
+Welcome to the Brain Games!
+May I have your name? Anna     
+Hello, Anna!
+What number is missing in the progression?
+Question: 409 .. 419 424 429 434 439
+Your answer: 414
+Correct!
+Question: 816 824 832 .. 848 856 864 872 880
+Your answer: 838
+'838' is wrong answer ;(. Correct answer was '840'.
+Let's try again, Anna
 ```

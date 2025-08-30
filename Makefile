@@ -1,6 +1,9 @@
 install:
 	uv sync
 
+brain-progression:
+	uv run brain-progression
+
 brain-gcd:
 	uv run brain-gcd
 
