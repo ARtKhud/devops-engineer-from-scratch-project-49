@@ -19,9 +19,9 @@ This repository contains simple command-line games written in Python as part of 
 - **brain-even**: Asks the user whether a randomly generated number is even.
 - **brain-clac**: Asks the user to calculate the expression and write the right answer
 - **brain-gcd**: Asks the user to find GCD (greatest common divisor)
-- **brain-progression**: Asks the user to find ommited number in the sequence of numbers 
+- **brain-progression**: Asks the user to find ommited number in the sequence of numbers
+- **brain-pime**: Asks the user whether a randomly generated number is prime
 
-More games may be added as the project evolves.
 
 ## 🎮 Launch and demonstration of the game
 ## Launch the brain games:
@@ -186,4 +186,43 @@ Question: 816 824 832 .. 848 856 864 872 880
 Your answer: 838
 '838' is wrong answer ;(. Correct answer was '840'.
 Let's try again, Anna
+```
+
+## Launch the prime games:
+```bash
+brain-prime
+```
+### Demonstration of different outcomes:
+
+### 1. Successful completion of the game:
+```
+Welcome to the Brain Games!
+May I have your name? Alex
+Hello, Alex!
+Answer "yes" if given number is prime. Otherwise answer "no".
+Question: 72
+Your answer: no
+Correct!
+Question: 386
+Your answer: no
+Correct!
+Question: 786
+Your answer: no
+Correct!
+Congratulations Alex
+```
+
+### 2. Wrong answer:
+```
+Welcome to the Brain Games!
+May I have your name? Alex
+Hello, Alex!
+Answer "yes" if given number is prime. Otherwise answer "no".
+Question: 365
+Your answer: no
+Correct!
+Question: 971
+Your answer: no
+'no' is wrong answer ;(. Correct answer was 'yes'.
+Let's try again, Alex
 ```

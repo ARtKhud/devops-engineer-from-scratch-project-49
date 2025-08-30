@@ -1,6 +1,9 @@
 install:
 	uv sync
 
+brain-prime:
+	uv run brain-prime
+
 brain-progression:
 	uv run brain-progression
 
