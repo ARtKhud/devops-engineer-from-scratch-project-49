@@ -1,5 +1,7 @@
 from random import randint
 
+TEXT = 'Answer "yes" if the number is even, otherwise answer "no".'
+
 
 def print_question():
     question_number = randint(1, 100)

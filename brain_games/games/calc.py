@@ -1,6 +1,7 @@
 from random import randint
 
 OPERATORS = ['+', '-', '*']
+QUESTION = 'What is the result of the expression?'
 
 
 def print_question():
