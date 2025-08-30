@@ -1,6 +1,9 @@
 install:
 	uv sync
 
+brain_calc:
+	uv run brain-calc
+
 brain-even:
 	uv run brain-even
 
