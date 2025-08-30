@@ -1,10 +1,10 @@
-from random import randint
+from secrets import randbelow
 
 TEXT = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def print_question():
-    question_number = randint(1, 999)
+    question_number = randbelow(999) + 1
     print(f"Question: {question_number}")
     return is_number_prime(question_number)
 
