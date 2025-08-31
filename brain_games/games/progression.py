@@ -1,16 +1,31 @@
 from secrets import randbelow
 
-TEXT = "What number is missing in the progression?"
+
+def get_condition_string():
+    return "What number is missing in the progression?"
 
 
-def print_question():
+def get_condition_data():
     generated_progression = generate_progression()
-    progression_with_ommited_number = ommit_random_number(generated_progression)
-    print(f"Question: {' '.join(
-        [str(item) for item in progression_with_ommited_number['result']]
-        )}")
-    return progression_with_ommited_number['ommited_item']
+    progression_with_omitted_number = omit_random_number(generated_progression)
+    return progression_with_omitted_number
 
+
+def get_correct_answer(progression_str: str):
+    progression_list = [
+        item if item == '..' else int(item)
+          for item in progression_str.split(' ')]
+    omitted_i = progression_list.index('..')
+    ommited_value = 0
+    if omitted_i != 0:
+        ommited_value = ((progression_list[omitted_i + 1]
+                          - progression_list[omitted_i - 1]) / 2
+            + progression_list[omitted_i - 1])
+    else:
+        ommited_value = (progression_list[omitted_i + 1] - (progression_list[omitted_i + 2]
+                          - progression_list[omitted_i + 1]))
+    return int(ommited_value)
+    
 
 def generate_progression():
     steps = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -24,29 +39,20 @@ def generate_progression():
     return result
     
 
-def ommit_random_number(progression):
-    ommited_index = randbelow(len(progression) - 1)
-    result = []
-    ommited_item = 0
-    for i, item in enumerate(progression):
-        if i == ommited_index:
-            ommited_item = item
-            result.append('..')
-            continue
-        result.append(item)
-    return {
-        "result": result,
-        "ommited_item": ommited_item
-        }
+def omit_random_number(progression):
+    index = randbelow(len(progression) - 1)
+    result = [*progression]
+    result[index] = ".."
+    return " ".join(str(item) for item in result)
+     
 
-
-def is_user_correct(num, answer):
-    to_int = int(answer)
-    if to_int == num:
+def is_user_correct(correct, answer):
+    int_ans = int(answer)
+    if correct == int_ans:
         print("Correct!", end="\n")
         return True
     else:
         print(
-            f"'{to_int}' is wrong answer ;(. Correct answer was '{num}'.",
+        f"'{int_ans}' is wrong answer ;(. Correct answer was '{correct}'.",
                end="\n")
         return False

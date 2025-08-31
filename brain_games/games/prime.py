@@ -1,24 +1,25 @@
 from secrets import randbelow
 
-TEXT = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+def get_condition_string():
+    return 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def print_question():
+def get_condition_data():
     question_number = randbelow(999) + 1
-    print(f"Question: {question_number}")
-    return is_number_prime(question_number)
+    return question_number
 
 
-def is_number_prime(num):
-    if num < 2:
+def get_correct_answer(data):
+    if data < 2:
         return False
-    if num in (2, 3):
+    if data in (2, 3):
         return True
-    if num % 2 == 0 or num % 3 == 0:
+    if data % 2 == 0 or data % 3 == 0:
         return False
     i = 5
-    while i * i <= num:
-        if num % i == 0 or num % (i + 2) == 0:
+    while i * i <= data:
+        if data % i == 0 or data % (i + 2) == 0:
             return False
         i += 6
     return True

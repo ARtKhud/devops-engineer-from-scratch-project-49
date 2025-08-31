@@ -31,11 +31,7 @@ brain-games
 ### Demonstration of different outcomes:
 
 ### 1. Successful completion of the game:
-```
-Welcome to the Brain Games!
-May I have your name? John
-Hello, John!
-```
+[![asciicast](https://asciinema.org/a/PlgDmYG8JIIbVUTlRFYAlV8Fd.svg)](https://asciinema.org/a/PlgDmYG8JIIbVUTlRFYAlV8Fd)
 
 ## Launch the even game:
 ```bash
@@ -44,34 +40,10 @@ brain-even
 ### Demonstration of different outcomes:
 
 ### 1. Successful completion of the game:
-```
-Welcome to the Brain Games!
-May I have your name? Alice
-Hello, Alice!
-Answer "yes" if the number is even, otherwise answer "no".
-Question: 15
-Your answer: no
-Correct!
-Question: 24
-Your answer: yes  
-Correct!
-Question: 7
-Your answer: no
-Correct!
-Congratulations, Alice!
-```
+[![asciicast](https://asciinema.org/a/IuSOLhhhKdQgs9GJ6CPJSqplu.svg)](https://asciinema.org/a/IuSOLhhhKdQgs9GJ6CPJSqplu)
 
 ### 2. Wrong answer:
-```
-Welcome to the Brain Games!
-May I have your name? Bob
-Hello, Bob!
-Answer "yes" if the number is even, otherwise answer "no".
-Question: 15
-Your answer: yes
-'yes' is wrong answer ;(. Correct answer was 'no'.
-Let's try again, Bob!
-```
+[![asciicast](https://asciinema.org/a/1cRtrI5HZ8hpCcMjK1r1TjbQE.svg)](https://asciinema.org/a/1cRtrI5HZ8hpCcMjK1r1TjbQE)
 
 ## Launch the calc game:
 ```bash
@@ -80,34 +52,10 @@ brain-calc
 ### Demonstration of different outcomes:
 
 ### 1. Successful completion of the game:
-```
-Welcome to the Brain Games!
-May I have your name? Tom
-Hello, Tom!
-What is the result of the expression?
-Question: 4 + 10
-Your answer: 14
-Correct!
-Question: 25 - 11
-Your answer: 14
-Correct!
-Question: 25 * 7
-Your answer: 175
-Correct!
-Congratulations, Tom!
-```
+[![asciicast](https://asciinema.org/a/I81iBmW2cok8rrDmViPjZQ9Qm.svg)](https://asciinema.org/a/I81iBmW2cok8rrDmViPjZQ9Qm)
 
 ### 2. Wrong answer:
-```
-Welcome to the Brain Games!
-May I have your name? Bob
-Hello, Bob!
-What is the result of the expression?
-Question: 25 * 7
-Your answer: 145
-'145' is wrong answer ;(. Correct answer was '175'.
-Let's try again, Bob!
-```
+[![asciicast](https://asciinema.org/a/3HJp1l92rqnJMxEzhbqwH1bit.svg)](https://asciinema.org/a/3HJp1l92rqnJMxEzhbqwH1bit)
 
 ## Launch the GCD game:
 ```bash
@@ -116,39 +64,9 @@ brain-gcd
 ### Demonstration of different outcomes:
 
 ### 1. Successful completion of the game:
-```
-Welcome to the Brain Games!
-May I have your name? Helen
-Hello, Helen!
-Find the greatest common divisor of given numbers.
-Question: 29 16
-Your answer: 1
-Correct!
-Question: 96 62
-Your answer: 2
-Correct!
-Question: 92 53
-Your answer: 1
-Correct!
-Congratulations, Helen!
-```
+[![asciicast](https://asciinema.org/a/1mAptPAIjzzglXsvOSyHLSvBi.svg)](https://asciinema.org/a/1mAptPAIjzzglXsvOSyHLSvBi)
 ### 2. Wrong answer:
-```
-Welcome to the Brain Games!
-May I have your name? Tirion
-Hello, Tirion!
-Find the greatest common divisor of given numbers.
-Question: 66 79
-Your answer: 1
-Correct!
-Question: 2 61
-Your answer: 1
-Correct!
-Question: 51 45
-Your answer: 1
-'1' is wrong answer ;(. Correct answer was '3'.
-Let's try again, Tirion!
-```
+[![asciicast](https://asciinema.org/a/YgGjC9FdpC3GrPXnBtsQwTV2h.svg)](https://asciinema.org/a/YgGjC9FdpC3GrPXnBtsQwTV2h)
 
 ## Launch the progression games:
 ```bash
@@ -157,36 +75,9 @@ brain-progression
 ### Demonstration of different outcomes:
 
 ### 1. Successful completion of the game:
-```
-Welcome to the Brain Games!
-May I have your name? Anna
-Hello, Anna!
-What number is missing in the progression?
-Question: 413 418 423 .. 433 438
-Your answer: 428
-Correct!
-Question: 76 81 86 91 96 101 106 111 ..
-Your answer: 116
-Correct!
-Question: 975 982 989 996 1003 1010 .. 1024 1031
-Your answer: 1017
-Correct!
-Congratulations, Anna!
-```
+[![asciicast](https://asciinema.org/a/k7ZS6gnUXljqXencRwDCniA7O.svg)](https://asciinema.org/a/k7ZS6gnUXljqXencRwDCniA7O)
 ### 2. Wrong answer:
-```
-Welcome to the Brain Games!
-May I have your name? Anna     
-Hello, Anna!
-What number is missing in the progression?
-Question: 409 .. 419 424 429 434 439
-Your answer: 414
-Correct!
-Question: 816 824 832 .. 848 856 864 872 880
-Your answer: 838
-'838' is wrong answer ;(. Correct answer was '840'.
-Let's try again, Anna!
-```
+[![asciicast](https://asciinema.org/a/PZbVgElfyKVKVdx2EPjPxfCsT.svg)](https://asciinema.org/a/PZbVgElfyKVKVdx2EPjPxfCsT)
 
 ## Launch the prime games:
 ```bash
@@ -195,34 +86,7 @@ brain-prime
 ### Demonstration of different outcomes:
 
 ### 1. Successful completion of the game:
-```
-Welcome to the Brain Games!
-May I have your name? Alex
-Hello, Alex!
-Answer "yes" if given number is prime. Otherwise answer "no".
-Question: 72
-Your answer: no
-Correct!
-Question: 386
-Your answer: no
-Correct!
-Question: 786
-Your answer: no
-Correct!
-Congratulations, Alex!
-```
+[![asciicast](https://asciinema.org/a/j1PlfTeLNBHx5oMiohOnmeUck.svg)](https://asciinema.org/a/j1PlfTeLNBHx5oMiohOnmeUck)
 
 ### 2. Wrong answer:
-```
-Welcome to the Brain Games!
-May I have your name? Alex
-Hello, Alex!
-Answer "yes" if given number is prime. Otherwise answer "no".
-Question: 365
-Your answer: no
-Correct!
-Question: 971
-Your answer: no
-'no' is wrong answer ;(. Correct answer was 'yes'.
-Let's try again, Alex!
-```
+[![asciicast](https://asciinema.org/a/uJicUZp4OxeXTQxCZPPZSnnSV.svg)](https://asciinema.org/a/uJicUZp4OxeXTQxCZPPZSnnSV)

@@ -1,26 +1,30 @@
 from random import randint
 
-OPERATORS = ['+', '-', '*']
-QUESTION = 'What is the result of the expression?'
+
+def get_condition_string():
+    return "What is the result of the expression?"
 
 
-def print_question():
+def get_condition_data():
+    OPERATORS = ["+", "-", "*"]
     number_one = randint(1, 30)
     number_two = randint(1, 30)
     random_operator = randint(0, 2)
-    print(f"Question: {number_one} {OPERATORS[random_operator]} {number_two}")
-    return calculate_expression(OPERATORS[random_operator],
-                                 number_one, number_two)
+    return f"Question: {number_one} {OPERATORS[random_operator]} {number_two}"
 
 
-def calculate_expression(operator, num_one, num_two):
-    if operator == '+':
+def get_correct_answer(data: str):
+    data_list = data.split(" ")
+    num_one = int(data_list[1])
+    operator = data_list[2]
+    num_two = int(data_list[3])
+    if operator == "+":
         return num_one + num_two
-    elif operator == '-':
+    elif operator == "-":
         return num_one - num_two
     else:
         return num_one * num_two
-    
+
 
 def is_user_correct(num, ans):
     to_int = int(ans)

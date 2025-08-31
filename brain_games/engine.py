@@ -1,27 +1,26 @@
 import prompt
 
 
-def start_game(condition_string, predicateFn, questionFn):
+def start_game(module):
     print("Welcome to the Brain Games!")
     user_name = prompt.string("May I have your name? ")
     print(f"Hello, {user_name}!")
 
-    print(condition_string, end="\n")
-
-    attempts = 1
-    number = questionFn()
+    print(module.get_condition_string(), end="\n")
+    condition_data = module.get_condition_data()
+    correct_ans = module.get_correct_answer(condition_data)
+    print(f"Question: {condition_data}")
     answer = prompt.string("Your answer: ")
 
-    is_correct = predicateFn(number, answer)
-    while attempts < 3 and is_correct:
-        number = questionFn()
-        answer = prompt.string("Your answer: ")
-        is_correct = predicateFn(number, answer)
+    is_correct = module.is_user_correct(correct_ans, answer)
+    for _ in range(2):
         if not is_correct:
+            print(f"Let's try again, {user_name}!")
             break
-        attempts += 1
-
-    if attempts == 3:
-        print(f"Congratulations, {user_name}!")
+        condition_data = module.get_condition_data()
+        correct_ans = module.get_correct_answer(condition_data)
+        print(f"Question: {condition_data}")
+        answer = prompt.string("Your answer: ")
+        is_correct = module.is_user_correct(correct_ans, answer)
     else:
-        print(f"Let's try again, {user_name}!")
+        print(f"Congratulations, {user_name}!")

@@ -1,12 +1,18 @@
 from random import randint
 
-TEXT = 'Answer "yes" if the number is even, otherwise answer "no".'
+
+def get_condition_string():
+    return 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def print_question():
+def get_condition_data():
     question_number = randint(1, 100)
-    print(f"Question: {question_number}")
-    return question_number
+    return f"Question: {question_number}"
+
+
+def get_correct_answer(data: str):
+    data_list = data.split(" ")
+    return int(data_list[1])
 
 
 def is_user_correct(number, answer):
