@@ -130,7 +130,7 @@ Correct!
 Question: 92 53
 Your answer: 1
 Correct!
-Congratulations Helen
+Congratulations, Helen!
 ```
 ### 2. Wrong answer:
 ```
@@ -147,7 +147,7 @@ Correct!
 Question: 51 45
 Your answer: 1
 '1' is wrong answer ;(. Correct answer was '3'.
-Let's try again, Tirion
+Let's try again, Tirion!
 ```
 
 ## Launch the progression games:
@@ -171,7 +171,7 @@ Correct!
 Question: 975 982 989 996 1003 1010 .. 1024 1031
 Your answer: 1017
 Correct!
-Congratulations Anna
+Congratulations, Anna!
 ```
 ### 2. Wrong answer:
 ```
@@ -185,7 +185,7 @@ Correct!
 Question: 816 824 832 .. 848 856 864 872 880
 Your answer: 838
 '838' is wrong answer ;(. Correct answer was '840'.
-Let's try again, Anna
+Let's try again, Anna!
 ```
 
 ## Launch the prime games:
@@ -209,7 +209,7 @@ Correct!
 Question: 786
 Your answer: no
 Correct!
-Congratulations Alex
+Congratulations, Alex!
 ```
 
 ### 2. Wrong answer:
@@ -224,5 +224,5 @@ Correct!
 Question: 971
 Your answer: no
 'no' is wrong answer ;(. Correct answer was 'yes'.
-Let's try again, Alex
+Let's try again, Alex!
 ```
