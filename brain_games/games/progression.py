@@ -13,19 +13,21 @@ def get_condition_data():
 
 def get_correct_answer(progression_str: str):
     progression_list = [
-        item if item == '..' else int(item)
-          for item in progression_str.split(' ')]
-    omitted_i = progression_list.index('..')
+        item if item == ".." else int(item) for 
+        item in progression_str.split(" ")
+    ]
+    omitted_i = progression_list.index("..")
     ommited_value = 0
     if omitted_i != 0:
-        ommited_value = ((progression_list[omitted_i + 1]
-                          - progression_list[omitted_i - 1]) / 2
-            + progression_list[omitted_i - 1])
+        ommited_value = (
+            progression_list[omitted_i + 1] - progression_list[omitted_i - 1]
+        ) / 2 + progression_list[omitted_i - 1]
     else:
-        ommited_value = (progression_list[omitted_i + 1] - (progression_list[omitted_i + 2]
-                          - progression_list[omitted_i + 1]))
+        ommited_value = progression_list[omitted_i + 1] - (
+            progression_list[omitted_i + 2] - progression_list[omitted_i + 1]
+        )
     return int(ommited_value)
-    
+
 
 def generate_progression():
     steps = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -37,14 +39,14 @@ def generate_progression():
         currentElement = start + i * steps[step_index]
         result.append(currentElement)
     return result
-    
+
 
 def omit_random_number(progression):
     index = randbelow(len(progression) - 1)
     result = [*progression]
     result[index] = ".."
     return " ".join(str(item) for item in result)
-     
+
 
 def is_user_correct(correct, answer):
     int_ans = int(answer)
@@ -53,6 +55,7 @@ def is_user_correct(correct, answer):
         return True
     else:
         print(
-        f"'{int_ans}' is wrong answer ;(. Correct answer was '{correct}'.",
-               end="\n")
+            f"'{int_ans}' is wrong answer ;(. Correct answer was '{correct}'.",
+              end="\n"
+        )
         return False

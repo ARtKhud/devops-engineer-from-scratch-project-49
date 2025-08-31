@@ -29,6 +29,8 @@ def is_user_correct(correct, answer):
         print("Correct!", end="\n")
         return True
     else:
-        print(f"'{to_int}' is wrong answer ;(. Correct answer was '{correct}'.",
-               end="\n")
+        print(
+            f"'{to_int}' is wrong answer ;(. Correct answer was '{correct}'.",
+              end="\n"
+        )
         return False

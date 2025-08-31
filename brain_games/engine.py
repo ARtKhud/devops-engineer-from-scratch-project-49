@@ -7,7 +7,7 @@ def start_game(module):
     print(f"Hello, {user_name}!")
 
     print(module.get_condition_string(), end="\n")
-    
+
     for _ in range(3):
         condition_data = module.get_condition_data()
         print(f"Question: {condition_data}")
@@ -19,4 +19,3 @@ def start_game(module):
             break
     else:
         print(f"Congratulations, {user_name}!")
-    

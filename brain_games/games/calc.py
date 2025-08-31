@@ -34,5 +34,5 @@ def is_user_correct(num, ans):
     else:
         print(
             f"'{to_int}' is wrong answer ;(. Correct answer was '{num}'.",
-               end="\n")
+              end="\n")
         return False
