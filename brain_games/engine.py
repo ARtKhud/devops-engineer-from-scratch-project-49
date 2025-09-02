@@ -1,19 +1,30 @@
 import prompt
 
 
+def is_user_correct(result, user_ans):
+    if user_ans == result:
+        print("Correct!", end="\n")
+        return True
+    else:
+        print(
+            f"'{user_ans}' is wrong answer ;(. Correct answer was '{result}'.",
+              end="\n"
+        )
+        return False
+
+
 def start(game):
     print("Welcome to the Brain Games!")
     user_name = prompt.string("May I have your name? ")
     print(f"Hello, {user_name}!")
 
     print(game.get_condition_string(), end="\n")
-
-    for _ in range(3):
-        condition_data = game.get_condition_data()
-        print(f"Question: {condition_data}")
-        correct_ans = game.get_correct_answer(condition_data)
-        answer = prompt.string("Your answer: ")
-        is_correct = game.is_user_correct(correct_ans, answer)
+    GAME_LAPS = 3
+    for _ in range(GAME_LAPS):
+        (condition, result) = game.get_condition_with_result()
+        print(f"Question: {condition}")
+        user_answer = prompt.string("Your answer: ")
+        is_correct = is_user_correct(result, user_answer)
         if not is_correct:
             print(f"Let's try again, {user_name}!")
             break
