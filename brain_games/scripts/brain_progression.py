@@ -1,6 +1,6 @@
 import brain_games.games.progression as progression
-from brain_games.engine import start_game
+from brain_games.engine import start
 
 
 def main():
-    start_game(progression)
+    start(progression)
