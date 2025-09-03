@@ -1,14 +1,13 @@
 import secrets
 
 
-def get_condition_string():
-    return "Find the greatest common divisor of given numbers."
+CONDITION_STRING = "Find the greatest common divisor of given numbers."
 
 
 def get_condition_with_result():
     number_one = secrets.randbelow(100) + 1
     number_two = secrets.randbelow(100) + 1
-    condition = f"Question: {number_one} {number_two}"
+    condition = f"{number_one} {number_two}"
     temp = number_one
     while number_two != 0:
         number_one = number_two
