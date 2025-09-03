@@ -1,7 +1,6 @@
 from secrets import randbelow
 
-
-CONDITION_STRING = "What number is missing in the progression?"
+CONDITION_STR = "What number is missing in the progression?"
 
 
 def get_condition_with_result():

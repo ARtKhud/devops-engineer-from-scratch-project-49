@@ -6,7 +6,7 @@ def start(game):
     user_name = prompt.string("May I have your name? ")
     print(f"Hello, {user_name}!")
 
-    print(game.CONDITION_STRING, end="\n")
+    print(game.CONDITION_STR, end="\n")
     GAME_LAPS = 3
     for _ in range(GAME_LAPS):
         (condition, result) = game.get_condition_with_result()

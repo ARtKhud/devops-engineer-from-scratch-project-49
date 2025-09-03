@@ -1,7 +1,6 @@
 from secrets import randbelow
 
-
-CONDITION_STRING = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+CONDITION_STR = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(num):
@@ -17,6 +16,7 @@ def is_prime(num):
             return 'no'
         i += 6
     return 'yes'
+
 
 def get_condition_with_result():
     condition = randbelow(999) + 1

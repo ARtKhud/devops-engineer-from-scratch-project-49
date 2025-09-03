@@ -1,7 +1,6 @@
 from random import randint
 
-
-CONDITION_STRING = 'Answer "yes" if the number is even, otherwise answer "no".'
+CONDITION_STR = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def get_condition_with_result():

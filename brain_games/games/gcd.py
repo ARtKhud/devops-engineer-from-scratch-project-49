@@ -1,7 +1,6 @@
 import secrets
 
-
-CONDITION_STRING = "Find the greatest common divisor of given numbers."
+CONDITION_STR = "Find the greatest common divisor of given numbers."
 
 
 def get_condition_with_result():

@@ -1,7 +1,6 @@
 from random import randint
 
-
-CONDITION_STRING = "What is the result of the expression?"
+CONDITION_STR = "What is the result of the expression?"
 
 
 def get_condition_with_result():
