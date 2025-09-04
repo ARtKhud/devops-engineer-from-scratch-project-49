@@ -1,10 +1,10 @@
 from random import randint
 
 CONDITION_STR = "What is the result of the expression?"
+OPERATORS = ["+", "-", "*"]
 
 
 def get_condition_with_result():
-    OPERATORS = ["+", "-", "*"]
     number_one = randint(1, 30)
     number_two = randint(1, 30)
     random_index = randint(0, 2)

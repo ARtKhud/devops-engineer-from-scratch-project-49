@@ -1,6 +1,7 @@
 from secrets import randbelow
 
 CONDITION_STR = "What number is missing in the progression?"
+STEPS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 def get_condition_with_result():
@@ -13,7 +14,6 @@ def get_condition_with_result():
 
 
 def generate_progression():
-    STEPS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     step_index = randbelow(len(STEPS) - 1)
     prog_len = randbelow(6) + 5
     start = randbelow(999) + 1
